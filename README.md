@@ -8,8 +8,9 @@ protocol, data directory, and release boundary.
 Every bot in the sidebar is a real agent with its own personality, model,
 workspace, conversation history, computer access, and connected tools.
 
-This foundation does not publish installers or updates yet. Build and verify it
-locally using the [fork development guide](docs/fork-development.md).
+The repository can build platform packages locally. Public release publishing,
+signing, notarization, and update feeds remain maintainer-owned release steps;
+build and verify locally using the [development guide](docs/fork-development.md).
 
 - [Fork provenance and licence boundary](DOWNSTREAM.md)
 - [Accepted architecture blueprint](docs/superpowers/specs/2026-09-26-open-agent-desktop-design.md)
