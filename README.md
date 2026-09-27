@@ -12,7 +12,7 @@ The repository can build platform packages locally. Public release publishing,
 signing, notarization, and update feeds remain maintainer-owned release steps;
 build and verify locally using the [development guide](docs/fork-development.md).
 
-- [Fork provenance and licence boundary](DOWNSTREAM.md)
+- [Project provenance and licence boundary](DOWNSTREAM.md)
 - [Accepted architecture blueprint](docs/superpowers/specs/2026-09-26-open-agent-desktop-design.md)
 - [Development and upstream-sync guide](docs/fork-development.md)
 
