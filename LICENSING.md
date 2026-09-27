@@ -16,7 +16,6 @@ source and binary distribution.
 
 Bundled third-party software keeps its own licenses; notices, license texts,
 source locations and the SBOM are listed in [NOTICE](NOTICE) and
-[`third_party/`](third_party/). The Open Agent Desktop name and mascot are trademarks
-of Milind Soni; the Apache License does not grant trademark rights (section 6),
-so a product built on Open Agent Desktop needs its own name unless a partner agreement
-says otherwise.
+[`third_party/`](third_party/). The Open Agent Desktop name and mascot are project branding;
+the Apache License does not grant trademark rights (section 6). A product built on Open Agent
+Desktop should use its own name and branding unless the project maintainers grant permission.

@@ -33,7 +33,7 @@ import { cn } from "@/lib/cn";
 import { t } from "@/lib/i18n";
 import { FEEDBACK_URL, HELP_CENTER_URL, openExternalLink } from "@/lib/app-links";
 
-/** "Milind Soni" → "MS", "milind" → "M", "you@x.dev" → "Y", unset → "?" */
+/** A two-word display name becomes two initials; email and unset values have safe fallbacks. */
 export function profileInitials(profile?: { name?: string; email?: string }): string {
   const name = profile?.name?.trim();
   if (name) {

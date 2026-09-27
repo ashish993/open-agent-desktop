@@ -425,7 +425,7 @@ const fields = execFileSync(
 for (const expected of [
   "Package: openagentdesktop",
   "Architecture: amd64",
-  "Maintainer: Milind Soni",
+  "Maintainer: Open Agent Desktop maintainers",
   "Section: utils",
   "Priority: optional",
 ]) {

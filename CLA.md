@@ -12,8 +12,8 @@ You sign by commenting on your pull request:
 It applies to every contribution you make to `enterprise/` from then on. It is
 modelled on the Apache Individual Contributor License Agreement, shortened.
 
-1. **Copyright license.** You grant Milind Soni ("the Project Owner") and
-   recipients of software distributed by the Project Owner a perpetual,
+1. **Copyright license.** You grant the Open Agent Desktop project maintainers (the
+   "Project Maintainers") and recipients of software distributed by the Project Maintainers a perpetual,
    worldwide, non-exclusive, no-charge, royalty-free, irrevocable license to
    reproduce, prepare derivative works of, publicly display, publicly perform,
    sublicense, and distribute your contribution and such derivative works,
@@ -32,10 +32,11 @@ modelled on the Apache Individual Contributor License Agreement, shortened.
 4. **Original work.** Each contribution is your original creation. If it
    includes work that is not yours, you identify it and its license in the
    pull request.
-5. **No obligation, no warranty.** The Project Owner is not obliged to use
+5. **No obligation, no warranty.** The Project Maintainers are not obliged to use
    your contribution. You provide it as is, without warranty of any kind, and
    you are not required to support it.
 6. **You keep your rights.** This is a license, not an assignment. You remain
    the owner of your contribution and may use it for any other purpose.
 
-Questions: soni.mil2001@gmail.com
+Questions: open a discussion or contact the maintainers through
+<https://github.com/ashish993/open-agent-desktop>.
