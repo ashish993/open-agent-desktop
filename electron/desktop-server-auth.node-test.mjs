@@ -6,6 +6,11 @@ import authModule from "./desktop-server-auth.cjs";
 const { DESKTOP_MUTATION_HEADER, desktopServerHeaders } = authModule;
 const TOKEN = "a".repeat(43);
 
+test("uses the valid wire header understood by the server", () => {
+  assert.equal(DESKTOP_MUTATION_HEADER, "X-OpenAgentDesktop-Desktop-Owner");
+  assert.equal(/\s/.test(DESKTOP_MUTATION_HEADER), false);
+});
+
 test("adds the owner capability to packaged main-process mutations", () => {
   assert.deepEqual(desktopServerHeaders(
     { "content-type": "application/json" },

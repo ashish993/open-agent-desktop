@@ -1,6 +1,8 @@
 "use strict";
 
-const DESKTOP_MUTATION_HEADER = "X-Open Agent Desktop-Desktop-Owner";
+// Header names cannot contain spaces. Keep this wire name stable with the
+// server-side request-auth contract (`x-openagentdesktop-desktop-owner`).
+const DESKTOP_MUTATION_HEADER = "X-OpenAgentDesktop-Desktop-Owner";
 
 /** Add the per-launch owner capability to main-process requests. Chromium's
  * webRequest hook cannot see Node fetch, so both paths use this one header
