@@ -1,0 +1,8 @@
+{
+  "name": "Open Agent Desktop",
+  "packageName": "open-agent-desktop",
+  "bundleId": "dev.openagent.desktop",
+  "protocol": "openagentdesktop",
+  "dataDirectory": ".open-agent-desktop",
+  "artifactPrefix": "Open-Agent-Desktop"
+}

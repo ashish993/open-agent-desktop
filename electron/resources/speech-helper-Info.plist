@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>CFBundleDisplayName</key>
+    <string>Open Agent Desktop</string>
+    <key>CFBundleExecutable</key>
+    <string>speech-helper</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.openagentdesktop.app.speech-helper</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>Open Agent Desktop Speech</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>LSBackgroundOnly</key>
+    <true/>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Open Agent Desktop listens while you dictate messages or talk to a bot.</string>
+    <key>NSSpeechRecognitionUsageDescription</key>
+    <string>Open Agent Desktop converts your speech into text during dictation and calls.</string>
+  </dict>
+</plist>

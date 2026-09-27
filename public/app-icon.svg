@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Open Agent Desktop</title>
+  <desc id="desc">A dark blue workspace tile with a cyan orbital network representing coordinated AI agents.</desc>
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#111c33"/><stop offset="1" stop-color="#07101f"/></linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8af5e4"/><stop offset="1" stop-color="#38bdf8"/></linearGradient>
+    <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="18" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1024" height="1024" rx="224" fill="url(#tile)"/>
+  <g fill="none" stroke="#4ddbd0" stroke-linecap="round" opacity=".38"><ellipse cx="512" cy="512" rx="300" ry="156" transform="rotate(-28 512 512)" stroke-width="18"/><ellipse cx="512" cy="512" rx="300" ry="156" transform="rotate(32 512 512)" stroke-width="18"/><circle cx="512" cy="512" r="236" stroke="#38bdf8" stroke-width="8" opacity=".52"/></g>
+  <g filter="url(#soft-glow)" fill="url(#glow)"><circle cx="512" cy="512" r="94"/><circle cx="240" cy="366" r="34"/><circle cx="788" cy="366" r="34"/><circle cx="806" cy="706" r="34"/><circle cx="218" cy="704" r="34"/></g>
+  <path d="M512 462v100M462 512h100" stroke="#07101f" stroke-width="22" stroke-linecap="round"/>
+</svg>
