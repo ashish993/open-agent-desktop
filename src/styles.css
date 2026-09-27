@@ -139,14 +139,9 @@
 }
 
 /* ── Midnight ──────────────────────────────────────────────────────────────
-   The upstream palette, pixel-sampled from the real Grok app. Repeated here
-   (rather than relying on the `@theme` defaults) so that a `[data-skin]`
-   subtree can switch *back* to it — the picker needs that.
-
-   Two upstream contrast gaps are preserved deliberately, because this skin's
-   job is to be the original: white on the accent fill measures 3.65:1 and
-   white on the danger fill 3.32:1, both short of AA for the 13–15px labels
-   they carry. Atelier and Foundry fix this via --color-accent-ink.
+   The cool utility palette. It remains available as a compact, high-contrast
+   option; Foundry is the product default because its signal-brass palette is
+   the product signature.
    ───────────────────────────────────────────────────────────────────────── */
 [data-skin="midnight"] {
   --code-color-scheme: dark;
@@ -166,6 +161,7 @@
   --color-accent: #1084fe;
   --color-accent-border: #459ffe;
   --color-accent-text: #7fc0ff;
+  --color-focus: #459ffe;
   --color-accent-ink: #ffffff;
   --color-bubble-user: #5a5a5a;
   --color-bubble-user-ink: #fcfcfc;   /* = ink: unchanged */
@@ -488,9 +484,9 @@
 }
 
 /* ── Daylight ─────────────────────────────────────────────────────────────
-   Midnight's twin. Midnight was pixel-sampled from the upstream app's dark
-   theme; this is the same sampling of its light one, so the two are the only
-   skins here that copy a palette rather than compose one.
+   Midnight's twin: a quiet daylight surface with a deliberately inverted
+   message bubble. Both palettes are composed for this product rather than
+   copied from a reference application.
 
    Its structural quirk is the user's own bubble: near-black on a near-white
    page, the one place a light skin carries inverted ink. That is what

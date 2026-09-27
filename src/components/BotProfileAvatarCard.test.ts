@@ -47,10 +47,10 @@ describe("BotProfileAvatarCard body picker", () => {
     }
   });
 
-  it("marks the current body pressed and the rest unpressed, defaulting to cursor", () => {
+  it("marks the current body pressed and the rest unpressed, defaulting to relay", () => {
     const markup = renderCard(makeBot());
 
-    expect(markup).toContain(`aria-pressed="true" aria-label="Use the ${MASCOT_BODIES.cursor.name} body"`);
+    expect(markup).toContain(`aria-pressed="true" aria-label="Use the ${MASCOT_BODIES.relay.name} body"`);
     expect(markup).toContain(`aria-pressed="false" aria-label="Use the ${MASCOT_BODIES.star.name} body"`);
   });
 
@@ -58,14 +58,14 @@ describe("BotProfileAvatarCard body picker", () => {
     const markup = renderCard(makeBot({ mascotBody: "star" }));
 
     expect(markup).toContain(`aria-pressed="true" aria-label="Use the ${MASCOT_BODIES.star.name} body"`);
-    expect(markup).toContain(`aria-pressed="false" aria-label="Use the ${MASCOT_BODIES.cursor.name} body"`);
+    expect(markup).toContain(`aria-pressed="false" aria-label="Use the ${MASCOT_BODIES.relay.name} body"`);
   });
 
   it("hides the body picker for flat crops that have no mascot to wear one", () => {
     const markup = renderCard(makeBot({ avatarCrop: "circle" }));
 
     expect(markup).not.toContain(">Body<");
-    expect(markup).not.toContain(`aria-label="Use the ${MASCOT_BODIES.cursor.name} body"`);
+    expect(markup).not.toContain(`aria-label="Use the ${MASCOT_BODIES.relay.name} body"`);
   });
 
   it("hides the body picker for every flat crop, not just circle", () => {

@@ -5,7 +5,7 @@ export const WORKSPACE_BACKUP_CLIENT_KEYS = [
   "omb-draft-attachments",
   "omb-draft-send-ids",
   "omb-draft-channel-modes",
-  "omb-skin",
+  "oad-skin",
   "omb-show-threads",
   "openagentdesktop.sidebarDensity",
   "openagentdesktop.sidebarCollapsedSections.v1",

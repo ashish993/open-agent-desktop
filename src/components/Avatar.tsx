@@ -1,8 +1,8 @@
 // Bot avatar — the Blob Studio "Cursor" mascot (CursorAvatar.tsx), wrapped
-// in the app's historical MausAvatar API so no call site changes: per-bot
+// through the stable avatar API so call sites remain focused on agent state:
 // color becomes a body gradient, the app's one-shot motion beats borrow the
 // face/state for a moment, and the eyes follow the pointer. The previous
-// hand-built Maus body + face engine (maus-engine/face/driver) is gone;
+// hand-built body + face engine is gone;
 // CursorAvatar owns morphing, blinking, drift, body motion and effects.
 import {
   forwardRef,

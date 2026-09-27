@@ -119,7 +119,7 @@ export function BotProfileAvatarCard({
         <span className="rounded-lg bg-control px-3 py-1.5 text-[14px] font-medium text-ink">Avatar</span>
         <button
           disabled={busy}
-          onClick={() => onPatch({ avatarCrop: "mascot", color: "green", mascotExpression: null, mascotBody: "cursor" })}
+          onClick={() => onPatch({ avatarCrop: "mascot", color: "cyan", mascotExpression: null, mascotBody: "relay" })}
           className="rounded-md px-2 py-1.5 text-[13px] text-ink-secondary hover:bg-control hover:text-ink disabled:opacity-50"
         >
           Reset mascot
@@ -256,12 +256,12 @@ export function BotProfileAvatarCard({
                   key={id}
                   type="button"
                   disabled={busy}
-                  aria-pressed={(bot.mascotBody ?? "cursor") === id}
+                  aria-pressed={(bot.mascotBody ?? "relay") === id}
                   aria-label={`Use the ${MASCOT_BODIES[id].name} body`}
                   onClick={() => onPatch({ mascotBody: id })}
                   className={cn(
                     "flex items-center justify-center rounded-lg py-1.5 disabled:opacity-50",
-                    (bot.mascotBody ?? "cursor") === id
+                    (bot.mascotBody ?? "relay") === id
                       ? "bg-control text-ink"
                       : "text-ink-secondary hover:bg-control/60",
                   )}

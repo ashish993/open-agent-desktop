@@ -8,8 +8,8 @@ function memory(values: Record<string, string>) {
 
 describe("full-backup browser state", () => {
   it("exports exact app drafts/preferences, never saved webhook credentials or auth/cache keys", () => {
-    const storage = memory({ "omb-drafts": "draft", "omb-webhook-credentials": "private URL", "omb-skin": "daylight", "auth-token": "secret", "omb-connected-apps": "cached accounts", "omb-email-gate": "identity", "omb-pending-workspace-restore": "old" });
-    expect(collectWorkspaceClientState(storage)).toEqual({ "omb-drafts": "draft", "omb-skin": "daylight" });
+    const storage = memory({ "omb-drafts": "draft", "omb-webhook-credentials": "private URL", "oad-skin": "daylight", "auth-token": "secret", "omb-connected-apps": "cached accounts", "omb-email-gate": "identity", "omb-pending-workspace-restore": "old" });
+    expect(collectWorkspaceClientState(storage)).toEqual({ "omb-drafts": "draft", "oad-skin": "daylight" });
   });
 
   it("replaces only allowlisted keys and clears old drafts absent from the backup", () => {
@@ -25,10 +25,10 @@ describe("full-backup browser state", () => {
   });
 
   it("rolls browser state back if restored values exceed storage quota", () => {
-    const storage = memory({ "omb-drafts": "old", "omb-skin": "daylight", "auth-token": "keep" });
+    const storage = memory({ "omb-drafts": "old", "oad-skin": "daylight", "auth-token": "keep" });
     const original = storage.setItem;
     storage.setItem = (key, value) => { if (value === "too large") throw new Error("quota"); original(key, value); };
     expect(() => applyWorkspaceClientState({ "omb-drafts": "too large" }, storage)).toThrow("quota");
-    expect(Object.fromEntries(storage.entries)).toEqual({ "omb-drafts": "old", "omb-skin": "daylight", "auth-token": "keep" });
+    expect(Object.fromEntries(storage.entries)).toEqual({ "omb-drafts": "old", "oad-skin": "daylight", "auth-token": "keep" });
   });
 });

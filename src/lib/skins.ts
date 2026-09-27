@@ -24,7 +24,7 @@ export type Skin = {
 };
 
 export const SKINS: readonly Skin[] = [
-  { id: "midnight", name: "Midnight", tagline: "The original. Cool and dark." },
+  { id: "midnight", name: "Midnight", tagline: "Deep blue-black with electric signal blue." },
   { id: "atelier", name: "Atelier", tagline: "Daylight on paper, warm and quiet." },
   { id: "foundry", name: "Foundry", tagline: "Night shift. Dark, warm, lit in brass." },
   { id: "lagoon", name: "Lagoon", tagline: "Cool daylight. Porcelain and deep teal." },
@@ -34,9 +34,9 @@ export const SKINS: readonly Skin[] = [
   { id: "daylight", name: "Daylight", tagline: "Midnight in reverse. Near-white, ink-black bubbles." },
 ];
 
-export const DEFAULT_SKIN: SkinId = "midnight";
+export const DEFAULT_SKIN: SkinId = "foundry";
 
-const KEY = "omb-skin";
+const KEY = "oad-skin";
 
 // The input is whatever localStorage handed back — a string this app wrote
 // on an earlier run, a value edited by hand, or a leftover from a renamed

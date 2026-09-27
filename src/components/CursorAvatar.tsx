@@ -1,5 +1,5 @@
 /**
- * CursorAvatar — an animated mascot built on the "cursor" silhouette.
+ * CursorAvatar — the animated relay mark used to show an agent's state.
  *
  * Self-contained: React is the only dependency. Drop this file in and use it.
  *

@@ -1,13 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
   <title id="title">Open Agent Desktop</title>
-  <desc id="desc">A dark blue workspace tile with a cyan orbital network representing coordinated AI agents.</desc>
+  <desc id="desc">A signal mark connecting three specialised agent nodes around a shared workspace.</desc>
   <defs>
-    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#111c33"/><stop offset="1" stop-color="#07101f"/></linearGradient>
-    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8af5e4"/><stop offset="1" stop-color="#38bdf8"/></linearGradient>
-    <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="18" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#17152b"/><stop offset="1" stop-color="#090b18"/></linearGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7c978"/><stop offset="1" stop-color="#ec765f"/></linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="15" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
   <rect width="1024" height="1024" rx="224" fill="url(#tile)"/>
-  <g fill="none" stroke="#4ddbd0" stroke-linecap="round" opacity=".38"><ellipse cx="512" cy="512" rx="300" ry="156" transform="rotate(-28 512 512)" stroke-width="18"/><ellipse cx="512" cy="512" rx="300" ry="156" transform="rotate(32 512 512)" stroke-width="18"/><circle cx="512" cy="512" r="236" stroke="#38bdf8" stroke-width="8" opacity=".52"/></g>
-  <g filter="url(#soft-glow)" fill="url(#glow)"><circle cx="512" cy="512" r="94"/><circle cx="240" cy="366" r="34"/><circle cx="788" cy="366" r="34"/><circle cx="806" cy="706" r="34"/><circle cx="218" cy="704" r="34"/></g>
-  <path d="M512 462v100M462 512h100" stroke="#07101f" stroke-width="22" stroke-linecap="round"/>
+  <path d="M512 180 806 350v324L512 844 218 674V350Z" fill="none" stroke="#8f8ab9" stroke-width="18" opacity=".42"/>
+  <path d="M512 512 302 382M512 512l210-130M512 512v252" fill="none" stroke="#f7c978" stroke-width="20" stroke-linecap="round" opacity=".78"/>
+  <g filter="url(#glow)" fill="url(#signal)">
+    <circle cx="302" cy="382" r="58"/><circle cx="722" cy="382" r="58"/><circle cx="512" cy="764" r="58"/>
+  </g>
+  <path d="M512 410 614 469v118L512 646l-102-59V469Z" fill="#f7f4ef"/>
+  <path d="M512 450v156M466 528h92" stroke="#17152b" stroke-width="18" stroke-linecap="round" opacity=".88"/>
 </svg>

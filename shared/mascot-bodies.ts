@@ -17,7 +17,7 @@
 import { z } from "zod";
 
 /** Every selectable body id, in the order the picker shows them. */
-export const MASCOT_BODY_IDS = ["cursor", "blob", "circle", "squircle", "capsule", "drop", "shield", "hexagon", "diamond", "star"] as const;
+export const MASCOT_BODY_IDS = ["relay", "cursor", "blob", "circle", "squircle", "capsule", "drop", "shield", "hexagon", "diamond", "star"] as const;
 
 export type MascotBodyId = (typeof MASCOT_BODY_IDS)[number];
 
@@ -38,9 +38,17 @@ export interface MascotBody {
 }
 
 /** The shipped mascot, and the fallback for any unrecognised value. */
-export const DEFAULT_MASCOT_BODY: MascotBodyId = "cursor";
+export const DEFAULT_MASCOT_BODY: MascotBodyId = "relay";
 
 export const MASCOT_BODIES: Record<MascotBodyId, MascotBody> = {
+  relay: {
+    id: "relay",
+    name: "Relay",
+    fit: "translate(0 0) scale(1.142705)",
+    body: "<path fill=\"{{GRADIENT}}\" d=\"M100 4C112 4 124 10 132 20L190 92C202 107 202 128 190 143L132 216C124 226 112 232 100 232C88 232 76 226 68 216L10 143C-2 128 -2 107 10 92L68 20C76 10 88 4 100 4Z\"/>",
+    clip: "<path d=\"M100 4C112 4 124 10 132 20L190 92C202 107 202 128 190 143L132 216C124 226 112 232 100 232C88 232 76 226 68 216L10 143C-2 128 -2 107 10 92L68 20C76 10 88 4 100 4Z\"/>",
+    anchor: { x: 112, y: 116, scale: 0.76 },
+  },
   cursor: {
     id: "cursor",
     name: "Cursor",
