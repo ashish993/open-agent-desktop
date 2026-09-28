@@ -88,6 +88,21 @@ Open <http://127.0.0.1:5199/>. To use real providers, install and sign in to
 at least one supported engine on your own machine. A provider is optional for
 exploring the interface and running the local test fixtures.
 
+## Install on macOS
+
+Prebuilt macOS installers are published on the [latest GitHub
+Release](https://github.com/ashish993/open-agent-desktop/releases/latest):
+
+- [Apple Silicon (ARM64)](https://github.com/ashish993/open-agent-desktop/releases/latest/download/Open-Agent-Desktop-0.1.88-arm64.dmg)
+- [Intel (x64)](https://github.com/ashish993/open-agent-desktop/releases/latest/download/Open-Agent-Desktop-0.1.88-x64.dmg)
+
+Choose ARM64 for Apple Silicon Macs (M1, M2, M3, or M4) and x64 for Intel
+Macs. Open the downloaded DMG, drag Open Agent Desktop to Applications, and
+launch it from there. These community packages are ad-hoc signed rather than
+Apple Developer ID signed and notarized, so macOS may ask you to confirm the
+first launch under **System Settings → Privacy & Security**. The release page
+contains SHA-256 checksums and the exact build metadata.
+
 ## Verify a change
 
 ```sh
@@ -98,8 +113,8 @@ pnpm build
 pnpm check:branding
 ```
 
-Build commands create local packages under `release/`. They are development
-artifacts until a maintainer signs, notarizes, and publishes them.
+Build commands create local packages under `release/`. Public installers are
+published as GitHub Release assets; they are not stored in the Git history.
 
 ## Project map
 
